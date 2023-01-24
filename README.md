@@ -14,15 +14,15 @@ curl -b cookies.txt -i -X POST -H 'Content-Type: application/json' -d '{"content
 
 View Logged In User's Notes
 ---------------------------
-curl -b cookies.txt -i -X GET -H 'Content-Type: application/json' -d '' http://localhost:8000/user/me/todoNotes
+curl -b cookies.txt -i -X GET -H 'Content-Type: application/json' http://localhost:8000/user/me/todoNotes
 
 View Arbitrary User's Notes
 ---------------------------
-curl -i -X GET -H 'Content-Type: application/json' -d '' http://localhost:8000/user/u1/todoNotes
+curl -i -X GET -H 'Content-Type: application/json' http://localhost:8000/user/u1/todoNotes
 
 Delete Note
 -----------
-curl -b cookies.txt -i -X DELETE -H 'Content-Type: application/json' -d '' http://localhost:8000/todoNote/1
+curl -b cookies.txt -i -X DELETE -H 'Content-Type: application/json' http://localhost:8000/todoNote/1
 
 Mark Note Complete
 -------------------
